@@ -1,0 +1,12 @@
+﻿  lab3_1.cpp
+  lab3_2.cpp
+  lab3_4.cpp
+  main_lab3.cpp
+C:\Users\filos\source\repos\Tema2\Tema2\lab3_2.cpp(15,1): warning C4005: 'DIM': macro redefinition (compiling source file main_lab3.cpp)
+C:\Users\filos\source\repos\Tema2\Tema2\lab3_1.cpp(12): message : see previous definition of 'DIM' (compiling source file main_lab3.cpp)
+  Mandelbrot.cpp
+  Source.cpp
+C:\Users\filos\source\repos\Tema2\Tema2\lab3_2.cpp(15,1): warning C4005: 'DIM': macro redefinition (compiling source file Source.cpp)
+C:\Users\filos\source\repos\Tema2\Tema2\lab3_1.cpp(12): message : see previous definition of 'DIM' (compiling source file Source.cpp)
+  LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+  Tema2.vcxproj -> C:\Users\filos\source\repos\Tema2\Release\Labs.exe

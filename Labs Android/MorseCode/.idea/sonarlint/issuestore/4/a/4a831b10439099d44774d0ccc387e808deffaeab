@@ -1,0 +1,7 @@
+
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(“×·ôşÿÿÿÿ8Ù€Ãğ–.
+csquid:S2184"FCast one of the operands of this multiplication operation to a "long".(ÏìÒ"8ˆ¿êğ–.
+Ysquid:UnusedPrivateMethod
+"(Remove this unused private "dot" method.(©„¡şÿÿÿÿ8İ¥ã÷–.
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÒÌç¾ÿÿÿÿÿ8İ¥ã÷–.

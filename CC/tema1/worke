@@ -1,0 +1,192 @@
+'use strict';
+const http = require('http');
+const axios = require('axios');
+const fs = require('fs');
+const url = require('url');
+const config_data = require('./config/config');
+var totalWeather = 0;
+var imagesRemain = 0;
+const port = config_data.port;
+const weather_key = config_data.weather_key;
+const image_key = config_data.image_key;
+const user = config_data.user;
+const pass = config_data.pass;
+const log_active = false;
+
+const logData = (response) => {
+    if (log_active) {
+        basicLog(response);
+        console.log(`Response body:`);
+        console.log(response.data)
+    }
+};
+
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+}
+
+const basicLog = (response) => {
+    if (log_active) {
+        console.log("Response api edit image");
+        console.log(`Status: ${response.status}`)
+        console.log(`StatusText: ${response.statusText}`)
+        console.log(`URL: ${response.config.url}`)
+        console.log(`URL: ${response.config.method}`)
+        console.log(`Content type: ${response.headers['content-type']}`)
+    }
+};
+
+
+const imageService = async (query, api) => {
+    return axios.get(`https://pixabay.com/api/?key=${image_key}&per_page=3&page=${getRandomInt(100) + 1}`)
+        .then(response => {
+            logData(response);
+            imagesRemain = response.headers['x-ratelimit-remaining'];
+            return response.data.hits[getRandomInt(3)].largeImageURL;
+        })
+        .catch(error => {
+            console.log("error image");
+        });
+};
+
+const color = async () => {
+    return (Math.random() * 0xFFFFFF << 0).toString(16);
+};
+
+const weatherService = async (a, b) => {
+    var description = axios.get(`https://api.darksky.net/forecast/${weather_key}/${a},${b}`)
+        .then(response => {
+            logData(response);
+            totalWeather = response.headers['x-forecast-api-calls'];
+            const currently = response.data.currently;
+            return {
+                'summary': currently.summary,
+                'temperature': currently.temperature,
+                'humidity': currently.humidity,
+                'pressure': currently.pressure,
+                'windSpeed': currently.windSpeed
+            };
+        })
+        .catch(error => {
+            console.log("error weather");
+        });
+    return description;
+};
+
+
+const editImageService = async (url, details, color) => {
+    const urlService = `https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20${encodeURIComponent(details['summary'])}%0Atemperature%20${encodeURIComponent(details['temperature'])}%0Ahumidity%20${encodeURIComponent(details['humidity'])}%0Apressure%20${encodeURIComponent(details['pressure'])}%0AwindSpeed%20${encodeURIComponent(details['windSpeed'])},g_west,x_30,y_80,co_rgb:${color}/${encodeURIComponent(url)}`
+
+    const response = await axios({
+        url: urlService,
+        method: 'GET',
+        responseType: 'stream',
+        headers: {
+            Authorization: `Basic ${user} ${pass}`
+        }
+    }).catch(error => {
+        console.log("error edit ")
+    });
+    // basicLog(response);
+    return response.data;
+};
+
+const logInfo = (request) => {
+    const {rawHeaders, httpVersion, method, socket, url} = request;
+    const {remoteAddress, remoteFamily} = socket;
+    const start = Date.now();
+    if (log_active) {
+        console.log("\n\nRequest:");
+        console.log("  " +
+            JSON.stringify({
+                timestamp: start,
+                httpVersion,
+                method,
+                remoteAddress,
+                remoteFamily,
+                url
+            }, null, 2)
+        );
+    }
+    return start;
+};
+
+
+const requestHandler = async (request, response) => {
+    logInfo(request);
+    console.log(request.url);
+
+    if (request.url === '/') {
+        fs.readFile('./index.html', function (err, content) {
+            if (err) {
+                console.log(err);
+                response.writeHead(400, {'Content-type': 'text/html'});
+                response.end("No such resource");
+            } else {
+                response.writeHead(200, {'Content-type': 'text/html'});
+                response.end(content);
+            }
+        });
+    } else if (request.url.includes('/image.jpg')) {
+        console.log("image");
+        const queryObject = url.parse(request.url, true).query;
+        const startBegin = new Date();
+        const weather = await weatherService(queryObject.lat, queryObject.long);
+        console.info('Execution time weather: %dms', new Date() - startBegin);
+        start = new Date();
+        const hexColor = await color();
+        console.info('Execution time color: %dms', new Date() - start);
+        var start = new Date();
+        const uriImage = await imageService(encodeURIComponent("word"));
+        console.info('Execution time fetch link image: %dms', new Date() - start);
+        var start = new Date();
+        const imageStream = await editImageService(uriImage, weather, hexColor);
+        console.info('Execution time edit photo: %dms', new Date() - start);
+
+        response.writeHead(200, {
+            'Content-Type': 'image/jpg',
+        });
+        imageStream.pipe(response);
+        console.info('Total execution time: %dms', new Date() - startBegin);
+        console.log("Send image\n");
+        console.log(imagesRemain);
+        console.log(totalWeather);
+        console.log(log_active);
+
+    } else if (request.url.includes('/meteo')) {
+        const queryObject = url.parse(request.url, true).query;
+        const startBegin = new Date();
+        const weather = await weatherService(queryObject.lat, queryObject.long);
+        console.info('Execution time weather: %dms', new Date() - startBegin);
+        response.writeHead(200, {
+            'Content-Type': 'application/json',
+        });
+        response.end(JSON.stringify(weather));
+    } else if (request.url.includes('/random')) {
+        var start = new Date();
+        const uriImage = await imageService(encodeURIComponent("word"));
+        console.info('Execution time fetch link image: %dms', new Date() - start);
+        response.writeHead(200, {'Content-Type': 'text/plain'});
+        response.write(JSON.stringify({'url': uriImage}));
+        response.end();
+    } else if (request.url === '/status') {
+        response.writeHead(200, {'Content-Type': 'text/plain'});
+        response.write(JSON.stringify({'weather': 1000 - totalWeather, "image": imagesRemain}));
+        response.end();
+    } else {
+        console.log("Unknow path");
+        response.end();
+    }
+
+};
+
+const server = http.createServer(requestHandler)
+
+server.listen(port, (err) => {
+    if (err) {
+        return console.log('something bad happened', err)
+    }
+
+    console.log(`server is listening on ${port}`)
+});

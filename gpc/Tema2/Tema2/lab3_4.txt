@@ -1,0 +1,107 @@
+#include <iostream>
+
+#include "glut.h"
+
+namespace
+{
+	class Random
+	{
+		static unsigned long x, y, z;
+	public:
+
+		static float xorshf96(void)
+		{
+			//period 2^96-1
+			unsigned long t;
+			x ^= x << 16;
+			x ^= x >> 5;
+			x ^= x << 1;
+
+			t = x;
+			x = y;
+			y = z;
+			z = t ^ x ^ y;
+
+			return static_cast<float>(z) / ULONG_MAX;
+		}
+	};
+
+	unsigned long Random::x = 123456789;
+	unsigned long Random::y = 362436069;
+	unsigned long Random::z = 521288629;
+
+
+	class Img1
+	{
+	public:
+		static void image(double x, double y, double length, int depth)
+		{
+			if (depth == 0)
+				return;
+
+			length = length / 3;
+			rect(x, y, length);
+
+			rect(x, y + length + length, length / 3);
+			image(x, y + 2 * length, length, depth - 1);
+
+			rect(x - 2 * length, y + 2 * length, length / 3);
+			image(x - 2 * length, y + 2 * length, length, depth - 1);
+
+			rect(x + 2 * length, y + 2 * length, length / 3);
+			image(x + 2 * length, y + 2 * length, length, depth - 1);
+
+
+			rect(x + 2 * length, y, length / 3);
+			image(x + 2 * length, y, length, depth - 1);
+
+			rect(x - 2 * length, y, length / 3);
+			image(x - 2 * length, y, length, depth - 1);
+
+			rect(x + 2 * length, y, length / 3);
+			image(x + 2 * length, y, length, depth - 1);
+
+
+			rect(x - 2 * length, y - 2 * length, length / 3);
+			image(x - 2 * length, y - 2 * length, length, depth - 1);
+
+			rect(x, y - 2 * length, length / 3);
+			image(x, y - 2 * length, length, depth - 1);
+
+			rect(x + 2 * length, y - 2 * length, length / 3);
+			image(x + 2 * length, y - 2 * length, length, depth - 1);
+		}
+
+
+		static void render()
+		{
+			depth++;
+			std::cout << depth << "\n";
+			if (depth == 7)
+				depth = 1;
+			rect(0, 0, 0.95);
+			image(0, 0, 0.95, depth);
+
+		}
+
+		static void rect(double x, double y, double distance)
+		{
+			glColor3f(rand(), abs(x),abs(y));
+			glBegin(GL_LINE_STRIP);
+			glVertex2d(x - distance, y + distance);
+			glVertex2d(x + distance, y + distance);
+			glVertex2d(x + distance, y - distance);
+			glVertex2d(x - distance, y - distance);
+			glVertex2d(x - distance, y + distance);
+			glEnd();
+		}
+
+		double limit = 0.00000001;
+		static double length;
+		static int depth;
+	};
+
+	double Img1::length = 1.5;
+	int Img1::depth = 1;
+
+}

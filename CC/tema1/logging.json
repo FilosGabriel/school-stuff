@@ -1,0 +1,456 @@
+{
+  "weather": 900,
+  "image": "4888",
+  "log": [
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=1",
+      "latency": 883.7271989881992
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=37",
+      "latency": 976.1327999830246
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=45",
+      "latency": 989.8676000237465
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=19",
+      "latency": 958.5303989946842
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=54",
+      "latency": 992.8687990009785
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=3",
+      "latency": 1000.5555990040302
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=74",
+      "latency": 986.7793000042439
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=11",
+      "latency": 973.1788010001183
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=60",
+      "latency": 990.4289000034332
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=37",
+      "latency": 976.3879000246525
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=63",
+      "latency": 984.0820010006428
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=90",
+      "latency": 987.1452000141144
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=86",
+      "latency": 995.8846989870071
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=92",
+      "latency": 1015.2166000008583
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=6",
+      "latency": 1013.7207989990711
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=73",
+      "latency": 1068.0992999970913
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=6",
+      "latency": 1166.2506999969482
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=59",
+      "latency": 1160.5573999881744
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=1",
+      "latency": 1169.2523999810219
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=38",
+      "latency": 1405.099900007248
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=15",
+      "latency": 1382.8911989927292
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=49",
+      "latency": 1396.2937000095844
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=44",
+      "latency": 1406.5170999765396
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=95",
+      "latency": 1421.1316999793053
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=43",
+      "latency": 1429.9186989963055
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=64",
+      "latency": 1432.4563010036945
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=29",
+      "latency": 1419.7432000041008
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1492.9296000003815
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1458.9490009844303
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1513.7425990104675
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1533.0639989972115
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1549.6037000119686
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1533.0338999927044
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1535.4185009896755
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1533.055900990963
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1574.7502000033855
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1569.2019990086555
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1563.857499986887
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1568.4889000058174
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1579.6812000274658
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1620.3409999907017
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1622.524800002575
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1598.496699988842
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1629.5699999928474
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1621.4142000079155
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1621.5577999949455
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1630.9142990112305
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1634.0478000044823
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1653.3708000183105
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1632.8846990168095
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1640.2186990082264
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1639.881999015808
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1679.7026999890804
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1728.8963000178337
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1763.2969000041485
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=64",
+      "latency": 1743.895298987627
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1795.9594000279903
+    },
+    {
+      "type": "response",
+      "url": "https://api.darksky.net/forecast/b0b07392ce997b156e3a86731b1393c0/-22.760611,-43.522732",
+      "latency": 1781.9004999995232
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=44",
+      "latency": 1933.9365009963512
+    },
+    {
+      "type": "response",
+      "url": "https://pixabay.com/api/?key=15354451-4a9f9f2f4801fe40350de96bb&per_page=3&page=44",
+      "latency": 2529.937200009823
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:ad55fb/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d2424b55a914f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 1595.725300014019
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:1504c8/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d3444352ab14f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 1599.8204010128975
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:2ce722/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d2464f5bab14f6da8c7dda79367b163adae156506c48702779dc974dc759ba_1280.jpg",
+      "latency": 1626.4130010008812
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:2433f2/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d2464950a414f6da8c7dda79367b163adae156506c48702779dc974dc759ba_1280.jpg",
+      "latency": 1789.747299015522
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:7cb6d7/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d7424e5aa814f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 1756.0133009850979
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:2c9295/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d6404d54a814f6da8c7dda79367b163adae156506c48702779dc974dc759ba_1280.jpg",
+      "latency": 1730.5855990052223
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:8edc9b/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d247435baa14f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 1885.0136000216007
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:9c7702/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d1444a50ac14f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 1912.7277989983559
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:9751f8/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d3474951af14f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 2132.5643000006676
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:14b59f/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d6454f56a414f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 2260.5470000207424
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:23d786/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d3414d5aa414f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 2383.9209999740124
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:da5001/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d0474b52a414f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 2451.437198996544
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:89849c/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d3464254aa14f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 2452.945600003004
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:c72319/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d2424f50af14f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 2660.9240000247955
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:76ce8f/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d2474a52a514f6da8c7dda79367b163adae156506c48702779dc974dc759ba_1280.jpg",
+      "latency": 2466.3252010047436
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:3a70dd/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d2434856ab14f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 2658.4049000144005
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:a6b54c/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d2424f55ad14f6da8c7dda79367b163adae156506c48702779dc974dc759ba_1280.jpg",
+      "latency": 2466.1173999905586
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:b125b1/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d04b4f55a814f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 2589.6883999705315
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:fd1168/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d2424f55ad14f6da8c7dda79367b163adae156506c48702779dc974dc759ba_1280.jpg",
+      "latency": 2453.2518990039825
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:d7d627/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d04a4856a914f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 2705.9354990124702
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:b1c101/https%3A%2F%2Fpixabay.com%2Fget%2F52e7d2444e53ac14f6da8c7dda79367b163adae156506c48702779dc974dc759ba_1280.jpg",
+      "latency": 2973.250799000263
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:8dbd40/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d2404a5bab14f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 2939.403299987316
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:f9a855/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d24b4856ae14f6da8c7dda79367b163adae156506c48702779dc974dc759bb_1280.jpg",
+      "latency": 2088.9691000282764
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:d313f5/https%3A%2F%2Fpixabay.com%2Fget%2F52e8dd434b56a914f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.jpg",
+      "latency": 3414.2001999914646
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:78014b/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d2444d53ab14f6da8c7dda79367b163adae156506c48702779dc974dc759ba_1280.png",
+      "latency": 3248.433400005102
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:c4583e/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d2444d53ab14f6da8c7dda79367b163adae156506c48702779dc974dc759ba_1280.png",
+      "latency": 3039.0476999878883
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:de8456/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d34a4e52ae14f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.png",
+      "latency": 4907.284898996353
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:19b807/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d34b4350ab14f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.png",
+      "latency": 4976.48819899559
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:95d066/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d34a4e50af14f6da8c7dda79367b163adae156506c48702779dc974dc759b9_1280.png",
+      "latency": 5558.362700998783
+    },
+    {
+      "type": "response",
+      "url": "https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_80:summary%20Possible%20Light%20Rain%20and%20Humid%0Atemperature%2073.33%0Ahumidity%201%0Apressure%201011.4%0AwindSpeed%206.23,g_west,x_30,y_80,co_rgb:14f06b/https%3A%2F%2Fpixabay.com%2Fget%2F52e8d3454e56a414f6da8c7dda79367b163adae156506c48702779dc974dc759ba_1280.png",
+      "latency": 13094.780498981476
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "weather_key": "b0b07392ce997b156e3a86731b1393c0",
+  "image_key": "15354451-4a9f9f2f4801fe40350de96bb",
+  "user": "475551228634435",
+  "pass": "oZDDcWc9wZ14x1mmSGgBSK7wxUs",
+  "log": true,
+  "log_server": true,
+  "port": 80
+}

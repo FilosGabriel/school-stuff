@@ -1,0 +1,18 @@
+https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_180:summary%20asd%0Atemperature%20asd%0Ahumidity%20asd%0Apressure%20asd%0AwindSpeed%20asd,g_west,x_30,y_80,co_rgb:3e2222/https://images.unsplash.com/photo-1451154488477-d20dee2a4e46?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjExNjg2N30%27
+
+
+
+
+
+https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_180:summary%20Partly%20Cloudy%0Atemperature%2051.42%0Ahumidity%200.64%0Apressure%201019.5%0AwindSpeed%206.5,g_west,x_30,y_80,co_rgb:3e2222https://images.unsplash.com/photo-1525962137416-8c60b5f498e8?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjExNjg2N30%27
+
+
+// return await axios.get(`https://res.cloudinary.com/djdowitwl/image/fetch/${url}`, {}, {
+    //     auth: {
+    //         username: 475551228634435,
+    //         password: "oZDDcWc9wZ14x1mmSGgBSK7wxUs"
+    //     }
+    // }).then(response => { return response; })
+    //     .catch(error => { console.log(error) })
+
+https://res.cloudinary.com/djdowitwl/image/fetch/l_text:Times_180:summary%20Partly%20Cloudy%0Atemperature%2052.49%0Ahumidity%200.62%0Apressure%201019.6%0AwindSpeed%205.39,g_west,x_30,y_80,co_rgb:#{color}/https%3A%2F%2Fimages.unsplash.com%2Fphoto-1510158105534-9b01f2462ce1%3Fixlib%3Drb-1.2.1%26q%3D85%26fm%3Djpg%26crop%3Dentropy%26cs%3Dsrgb%26ixid%3DeyJhcHBfaWQiOjExNjg2N30

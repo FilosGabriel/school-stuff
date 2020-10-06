@@ -1,0 +1,59 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    // Spring Boot Gradle Plugin を使用
+    classpath 'org.springframework.boot:spring-boot-gradle-plugin:2.2.0.RELEASE'
+    // Google App Engine Gradle plugin を使用
+    classpath 'com.google.cloud.tools:appengine-gradle-plugin:2.2.0'
+  }
+}
+
+plugins {
+	id 'org.springframework.boot' version '2.2.6.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'com.google.cloud.tools.appengine'
+
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'com.google.appengine:appengine-api-1.0-sdk:+'  // Latest App Engine Api's
+
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+test {
+	useJUnitPlatform()
+  testLogging {
+    // テスト時の標準出力と標準エラー出力を表示する
+    showStandardStreams true
+    // イベントを出力する (TestLogEvent)
+    events 'started', 'skipped', 'passed', 'failed'
+  }
+}
+appengine {
+  // デプロイ時の設定
+  // GCLOUD_CONFIG を指定しておくと
+  // gcloud config で設定しているプロジェクト情報がセットされる
+  deploy {
+    // デプロイ先の Google Cloud Project ID
+    projectId = "GCLOUD_CONFIG"
+    // デプロイによって反映される Web アプリのバージョン
+    // 指定しなければ新しく生成される
+    version = "GCLOUD_CONFIG"
+  }
+}

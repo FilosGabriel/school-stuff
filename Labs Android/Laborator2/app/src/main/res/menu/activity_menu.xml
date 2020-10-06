@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/title"
+        android:title="Best app" />
+    <item
+        android:id="@+id/titl2"
+        android:title="Settings" />
+    <item
+        android:id="@+id/dialog"
+        android:title="Dialog" />
+
+    <item
+        android:id="@+id/save_data"
+        android:title="Save data" />
+
+
+    <item
+        android:id="@+id/sensors_list"
+        android:title="List sensors" />
+    <item
+        android:id="@+id/camera"
+        android:title="Camera" />
+</menu>

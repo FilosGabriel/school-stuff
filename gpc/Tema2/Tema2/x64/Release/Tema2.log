@@ -1,0 +1,22 @@
+﻿  Source.cpp
+C:\Users\filos\source\repos\Tema2\Tema2\Source.cpp(73,49): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\filos\source\repos\Tema2\Tema2\Source.cpp(73,27): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\filos\source\repos\Tema2\Tema2\Source.cpp(74,47): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\filos\source\repos\Tema2\Tema2\Source.cpp(74,27): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\filos\source\repos\Tema2\Tema2\Source.cpp(86,71): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\filos\source\repos\Tema2\Tema2\Source.cpp(86,54): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\filos\source\repos\Tema2\Tema2\Source.cpp(86,33): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\filos\source\repos\Tema2\Tema2\Source.cpp(94,17): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\filos\source\repos\Tema2\Tema2\Source.cpp(94,14): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\filos\source\repos\Tema2\Tema2\Source.cpp(95,17): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\filos\source\repos\Tema2\Tema2\Source.cpp(95,14): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\filos\source\repos\Tema2\Tema2\Source.cpp(98,17): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\filos\source\repos\Tema2\Tema2\Source.cpp(98,14): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\filos\source\repos\Tema2\Tema2\Source.cpp(99,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\filos\source\repos\Tema2\Tema2\Source.cpp(99,14): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  Generating code
+  6 of 24 functions (25.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Tema2.vcxproj -> C:\Users\filos\source\repos\Tema2\x64\Release\Labs.exe

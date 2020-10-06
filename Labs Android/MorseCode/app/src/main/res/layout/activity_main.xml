@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/transitions_container"
+    android:background="#2660A4"
+    tools:context=".MainActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        />
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:clickable="true"
+        android:fontFamily="monospace"
+        android:text="@string/textview"
+        android:gravity="center"
+
+        android:textSize="36sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="78dp" />
+
+    <EditText
+        android:id="@+id/editText"
+
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="SOS"
+        android:textColor="@android:color/white"
+
+        android:textColorHint="@android:color/white"
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <Button
+        android:id="@+id/start_background_service_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flash morse code"
+        android:background = "@drawable/roundedbutton"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/stop_background_service_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background = "@drawable/roundedbutton"
+        android:text="Stop morse code"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<style>
+    #image {
+        width: 75%;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px; /* future proofing */
+        -khtml-border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 20px black;
+        -moz-box-shadow: 0px 0px 20px black;
+        box-shadow: 0px 0px 20px black;
+    }
+
+
+    html,
+    body {
+        height: 90%;
+        width: 100%;
+        margin: 0;
+        background: #d1913c; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #d1913c, #ffd194); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #d1913c, #ffd194);
+    }
+
+    .body {
+        height: 90%;
+        width: 90%;
+        padding: 5%;
+        display: flex;
+    }
+
+    #label,#label1 {
+        color: white;
+        font-weight: 300;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+
+
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    p {
+        color: white;
+        font-weight: 300;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    a.button1 {
+        display: inline-block;
+        padding: 0.35em 1.2em;
+        border: 0.2em solid #FFFFFF;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: center;
+        transition: all 0.2s;
+    }
+
+    a.button1:hover {
+        color: #000000;
+        background-color: #FFFFFF;
+    }
+
+    @media all and (max-width: 30em) {
+        a.button1 {
+            display: block;
+            margin: 0.4em auto;
+        }
+    }
+
+    .pair {
+        margin: 20px;
+    }
+
+    input, input:active {
+        display: inline-block;
+        background: transparent;
+        padding: 0.35em 1.2em;
+        border: 0.2em solid #FFFFFF;
+        margin: 0.3em 0.3em 30px;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+</style>
+<head>
+    <title>CC</title>
+</head>
+
+<body>
+<div class="body">
+    <img id="image" src="#">
+    <div class="menu">
+        <a href="#" class="button1" onclick="newPhoto()">Generate image</a>
+        <a href="#" class="button1" onclick="getWeather()">Weather</a>
+        <a href="#" class="button1" onclick="getPhoto()">Random image</a>
+        <a href="#" class="button1" onclick="status()">Metrics</a>
+
+        <span class="pair">
+            <label for="input" id="label">Latitude</label>
+            <input type="text" id="input" value="-22.760611">
+        </span>
+        <span class="pair">
+            <label for="input" id="label1">Longitude</label>
+            <input type="text" id="input2" value="-43.522732">
+        </span>
+        <div id="weather">
+        </div>
+
+    </div>
+</div>
+</body>
+<script type="application/javascript">
+
+    function newPhoto() {
+        document.querySelector('#weather').innerHTML = '';
+        document.querySelector('#image').src = `http://localhost/image.jpg?time=${new Date().getTime()}&lat=${document.querySelector("#input").value}&long=${document.querySelector("#input2").value}`;
+    }
+
+    // {"summary":"broken clouds","temperature":278.9,"humidity":70,"pressure":1027,"windSpeed":2.1}
+    function getWeather() {
+        fetch(`http://localhost/meteo?lat=-22.760611&long=-43.522732`)//${document.querySelector('#input').value}`)
+            .then(response => response.json())
+            .then(response => {
+                document.querySelector('#weather').innerHTML = `<p> Summary:${response.summary}</p><p>Temperature :${response.temperature}</p><p>Humidity: ${response.humidity}</p><p>pressure: ${response.pressure}</p><p>wind speed ${response.windSpeed}</p>`
+            })
+    }
+
+    function getPhoto() {
+        document.querySelector('#weather').innerHTML = '';
+        fetch('http://localhost/random')
+            .then(response => response.json())
+            .then(response => {
+                document.querySelector('#image').src = response.url;
+
+            })
+            .catch(error => console.log(error));
+    };
+
+    function status() {
+        window.open('http://localhost/metrics', '_blank');
+
+    }
+
+
+</script>
+
+</html>

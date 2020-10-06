@@ -1,0 +1,17 @@
+﻿Tema1.obj : error LNK2005: "void __cdecl Display1(void)" (?Display1@@YAXXZ) already defined in Source.obj
+Tema1.obj : error LNK2005: "void __cdecl Display2(void)" (?Display2@@YAXXZ) already defined in Source.obj
+Tema1.obj : error LNK2005: "void __cdecl Display3(void)" (?Display3@@YAXXZ) already defined in Source.obj
+Tema1.obj : error LNK2005: "void __cdecl Display4(void)" (?Display4@@YAXXZ) already defined in Source.obj
+Tema1.obj : error LNK2005: "void __cdecl Display5(void)" (?Display5@@YAXXZ) already defined in Source.obj
+Tema1.obj : error LNK2005: "void __cdecl Display6(void)" (?Display6@@YAXXZ) already defined in Source.obj
+Tema1.obj : error LNK2005: "void __cdecl Display7(void)" (?Display7@@YAXXZ) already defined in Source.obj
+Tema1.obj : error LNK2005: "void __cdecl Display8(void)" (?Display8@@YAXXZ) already defined in Source.obj
+Tema1.obj : error LNK2005: "void __cdecl Display(void)" (?Display@@YAXXZ) already defined in Source.obj
+Tema1.obj : error LNK2005: "void __cdecl Init(void)" (?Init@@YAXXZ) already defined in Source.obj
+Tema1.obj : error LNK2005: "void __cdecl KeyboardFunc(unsigned char,int,int)" (?KeyboardFunc@@YAXEHH@Z) already defined in Source.obj
+Tema1.obj : error LNK2005: "void __cdecl MouseFunc(int,int,int,int)" (?MouseFunc@@YAXHHHH@Z) already defined in Source.obj
+Tema1.obj : error LNK2005: "void __cdecl Reshape(int,int)" (?Reshape@@YAXHH@Z) already defined in Source.obj
+Tema1.obj : error LNK2005: "void __cdecl drawnHexagon(float,float,float,float)" (?drawnHexagon@@YAXMMMM@Z) already defined in Source.obj
+Tema1.obj : error LNK2005: _main already defined in Source.obj
+Tema1.obj : error LNK2005: "unsigned char prevKey" (?prevKey@@3EA) already defined in Source.obj
+C:\Users\filos\source\repos\Teme\Debug\Teme.exe : fatal error LNK1169: one or more multiply defined symbols found

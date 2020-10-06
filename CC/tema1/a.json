@@ -1,0 +1,294 @@
+{ status: 200,
+    statusText: 'OK',
+    headers:
+     { 'content-type': 'image/jpeg',
+       etag: '"031fd9d756f656ef73dd536e805cb72e"',
+       'last-modified': 'Fri, 21 Feb 2020 13:52:54 GMT',
+       'x-request-id': '877f3f860b8117848cf87bbfcf7f1a71',
+       'content-length': '5838201',
+       date: 'Fri, 21 Feb 2020 14:07:03 GMT',
+       connection: 'close',
+       'strict-transport-security': 'max-age=604800',
+       'cache-control': 'public, no-transform, immutable, max-age=604800',
+       'server-timing':
+        'cloudinary;dur=1154;start=2020-02-21T13:52:52.596Z,cld-id;desc=877f3f860b8117848cf87bbfcf7f1a71,fastly;dur=1;start=2020-02-21T14:07:03.368Z;desc=HIT,rtt;dur=74',
+       server: 'Cloudinary',
+       'timing-allow-origin': '*',
+       'access-control-allow-origin': '*',
+       'access-control-expose-headers': 'Content-Length,Content-Disposition,Server-Timing',
+       'accept-ranges': 'bytes' },
+    config:
+     { url:
+        'https://res.cloudinary.com/djdowitwl/image/fetch/https://images.unsplash.com/photo-1451154488477-d20dee2a4e46?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjExNjg2N30',
+       method: 'get',
+       headers:
+        { Accept: 'application/json, text/plain, */*',
+          'User-Agent': 'axios/0.19.2' },
+       transformRequest: [ [Function: transformRequest] ],
+       transformResponse: [ [Function: transformResponse] ],
+       timeout: 0,
+       adapter: [Function: httpAdapter],
+       xsrfCookieName: 'XSRF-TOKEN',
+       xsrfHeaderName: 'X-XSRF-TOKEN',
+       maxContentLength: -1,
+       validateStatus: [Function: validateStatus],
+       data: undefined },
+    request:
+     ClientRequest {
+       _events:
+        [Object: null prototype] {
+          socket: [Function],
+          abort: [Function],
+          aborted: [Function],
+          error: [Function],
+          timeout: [Function],
+          prefinish: [Function: requestOnPrefinish] },
+       _eventsCount: 6,
+       _maxListeners: undefined,
+       output: [],
+       outputEncodings: [],
+       outputCallbacks: [],
+       outputSize: 0,
+       writable: true,
+       _last: true,
+       chunkedEncoding: false,
+       shouldKeepAlive: false,
+       useChunkedEncodingByDefault: false,
+       sendDate: false,
+       _removedConnection: false,
+       _removedContLen: false,
+       _removedTE: false,
+       _contentLength: 0,
+       _hasBody: true,
+       _trailer: '',
+       finished: true,
+       _headerSent: true,
+       socket:
+        TLSSocket {
+          _tlsOptions: [Object],
+          _secureEstablished: true,
+          _securePending: false,
+          _newSessionPending: false,
+          _controlReleased: true,
+          _SNICallback: null,
+          servername: 'res.cloudinary.com',
+          alpnProtocol: false,
+          authorized: true,
+          authorizationError: null,
+          encrypted: true,
+          _events: [Object],
+          _eventsCount: 8,
+          connecting: false,
+          _hadError: false,
+          _handle: [TLSWrap],
+          _parent: null,
+          _host: 'res.cloudinary.com',
+          _readableState: [ReadableState],
+          readable: true,
+          _maxListeners: undefined,
+          _writableState: [WritableState],
+          writable: false,
+          allowHalfOpen: false,
+          _sockname: null,
+          _pendingData: null,
+          _pendingEncoding: '',
+          server: undefined,
+          _server: null,
+          ssl: [TLSWrap],
+          _requestCert: true,
+          _rejectUnauthorized: true,
+          parser: null,
+          _httpMessage: [Circular],
+          [Symbol(res)]: [TLSWrap],
+          [Symbol(asyncId)]: 24,
+          [Symbol(lastWriteQueueSize)]: 0,
+          [Symbol(timeout)]: null,
+          [Symbol(kBytesRead)]: 0,
+          [Symbol(kBytesWritten)]: 0,
+          [Symbol(connect-options)]: [Object] },
+       connection:
+        TLSSocket {
+          _tlsOptions: [Object],
+          _secureEstablished: true,
+          _securePending: false,
+          _newSessionPending: false,
+          _controlReleased: true,
+          _SNICallback: null,
+          servername: 'res.cloudinary.com',
+          alpnProtocol: false,
+          authorized: true,
+          authorizationError: null,
+          encrypted: true,
+          _events: [Object],
+          _eventsCount: 8,
+          connecting: false,
+          _hadError: false,
+          _handle: [TLSWrap],
+          _parent: null,
+          _host: 'res.cloudinary.com',
+          _readableState: [ReadableState],
+          readable: true,
+          _maxListeners: undefined,
+          _writableState: [WritableState],
+          writable: false,
+          allowHalfOpen: false,
+          _sockname: null,
+          _pendingData: null,
+          _pendingEncoding: '',
+          server: undefined,
+          _server: null,
+          ssl: [TLSWrap],
+          _requestCert: true,
+          _rejectUnauthorized: true,
+          parser: null,
+          _httpMessage: [Circular],
+          [Symbol(res)]: [TLSWrap],
+          [Symbol(asyncId)]: 24,
+          [Symbol(lastWriteQueueSize)]: 0,
+          [Symbol(timeout)]: null,
+          [Symbol(kBytesRead)]: 0,
+          [Symbol(kBytesWritten)]: 0,
+          [Symbol(connect-options)]: [Object] },
+       _header:
+        'GET /djdowitwl/image/fetch/https://images.unsplash.com/photo-1451154488477-d20dee2a4e46?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjExNjg2N30 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nUser-Agent: axios/0.19.2\r\nHost: res.cloudinary.com\r\nConnection: close\r\n\r\n',
+       _onPendingData: [Function: noopPendingOutput],
+       agent:
+        Agent {
+          _events: [Object],
+          _eventsCount: 1,
+          _maxListeners: undefined,
+          defaultPort: 443,
+          protocol: 'https:',
+          options: [Object],
+          requests: {},
+          sockets: [Object],
+          freeSockets: {},
+          keepAliveMsecs: 1000,
+          keepAlive: false,
+          maxSockets: Infinity,
+          maxFreeSockets: 256,
+          maxCachedSessions: 100,
+          _sessionCache: [Object] },
+       socketPath: undefined,
+       timeout: undefined,
+       method: 'GET',
+       path:
+        '/djdowitwl/image/fetch/https://images.unsplash.com/photo-1451154488477-d20dee2a4e46?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjExNjg2N30',
+       _ended: true,
+       res:
+        IncomingMessage {
+          _readableState: [ReadableState],
+          readable: false,
+          _events: [Object],
+          _eventsCount: 3,
+          _maxListeners: undefined,
+          socket: [TLSSocket],
+          connection: [TLSSocket],
+          httpVersionMajor: 1,
+          httpVersionMinor: 1,
+          httpVersion: '1.1',
+          complete: true,
+          headers: [Object],
+          rawHeaders: [Array],
+          trailers: {},
+          rawTrailers: [],
+          aborted: false,
+          upgrade: false,
+          url: '',
+          method: null,
+          statusCode: 200,
+          statusMessage: 'OK',
+          client: [TLSSocket],
+          _consuming: true,
+          _dumped: false,
+          req: [Circular],
+          responseUrl:
+           'https://res.cloudinary.com/djdowitwl/image/fetch/https://images.unsplash.com/photo-1451154488477-d20dee2a4e46?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjExNjg2N30',
+          redirects: [] },
+       aborted: undefined,
+       timeoutCb: null,
+       upgradeOrConnect: false,
+       parser: null,
+       maxHeadersCount: null,
+       _redirectable:
+        Writable {
+          _writableState: [WritableState],
+          writable: true,
+          _events: [Object],
+          _eventsCount: 2,
+          _maxListeners: undefined,
+          _options: [Object],
+          _redirectCount: 0,
+          _redirects: [],
+          _requestBodyLength: 0,
+          _requestBodyBuffers: [],
+          _onNativeResponse: [Function],
+          _currentRequest: [Circular],
+          _currentUrl:
+           'https://res.cloudinary.com/djdowitwl/image/fetch/https://images.unsplash.com/photo-1451154488477-d20dee2a4e46?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjExNjg2N30' },
+       [Symbol(isCorked)]: false,
+       [Symbol(outHeadersKey)]:
+        [Object: null prototype] { accept: [Array], 'user-agent': [Array], host: [Array] } },
+    data:
+     '����\u0000\u0010JFIF\u0000\u0001\u0002\u0001\u0000H\u0000H\u0000\u0000��\u0015"Exif\u0000\u0000MM\u0000*\u0000\u0000\u0000\b\u0000\n\u0001\u0006\u0000\u0003\u0000\u0000\u0000\u0001�#\u0000\u0000\u0001\u000f\u0000\u0002\u0000\u0000\u0000\u0014\u0000\u0000\u0000�\u0001\u0010\u0000\u0002\u0000\u0000\u0000\u0014\u0000\u0000\u0000�\u0001\u0012\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0001\u001a\u0000\u0005\u0000\u0000\u0000\u0001\u0000\u0000\u0000�\u0001\u001b\u0000\u0005\u0000\u0000\u0000\u0001\u0000\u0000\u0000�\u0001(\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0002\u0000\u0000\u00011\u0000\u0002\u0000\u0000\u0000\u001e\u0000\u0000\u0000�\u00012\u0000\u0002\u0000\u0000\u0000\u0014\u0000\u0000\u0000܇i\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000�\u0000\u0000\u0002hPENTAX             \u0000PENTAX K-x         \u0000\u0000\n��\u0000\u0000\'\u0010\u0000\n��\u0000\u0000\'\u0010Adobe Photoshop CS3 Macintosh\u00002015:05:19 20:07:25\u0000\u0000\u0018��\u0000\u0005\u0000\u0000\u0000\u0001\u0000\u0000\u0002\u0016��\u0000\u0005\u0000\u0000\u0000\u0001\u0000\u0000\u0002\u001e�"\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0003\u0000\u0000�\'\u0000\u0003\u0000\u0000\u0000\u0001\u0000�\u0000\u0000�\u0003\u0000\u0002\u0000\u0000\u0000\u0014\u0000\u0000\u0002&�\u0004\u0000\u0002\u0000\u0000\u0000\u0014\u0000\u0000\u0002:�\u0004\u0000\n\u0000\u0000\u0000\u0001\u0000\u0000\u0002N�\u0005\u0000\u0005\u0000\u0000\u0000\u0001\u0000\u0000\u0002V�\u0007\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0005\u0000\u0000�\t\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0010\u0000\u0000�\n\u0000\u0005\u0000\u0000\u0000\u0001\u0000\u0000\u0002^�\u0001\u0000\u0003\u0000\u0000\u0000\u0001��\u0000\u0000�\u0002\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0010��\u0003\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u000b �\u0017\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0002\u0000\u0000�\u0001\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000�\u0002\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0000�\u0003\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000�\u0005\u0000\u0003\u0000\u0000\u0000\u0001\u0000K\u0000\u0000�\u0006\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000�\b\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000�\t\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000�\n\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0001\u0000\u0000�\f\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0001�\u0000\u0000\u0000\u001c\u0000\u0000\u0000\u00052015:05:06 18:28:00\u00002015:05:06 18:28:00\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\n\u0000\u0000\r#\u0000\u0000\u0004�\u0000\u0000\u00002\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0006\u0001\u0003\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0006\u0000\u0000\u0001\u001a\u0000\u0005\u0000\u0000\u0000\u0001\u0000\u0000\u0002�\u0001\u001b\u0000\u0005\u0000\u0000\u0000\u0001\u0000\u0000\u0002�\u0001(\u0000\u0003\u0000\u0000\u0000\u0001\u0000\u0002\u0000\u0000\u0002\u0001\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0002�\u0002\u0002\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0012T\u0000\u0000\u0000\u0000\u0000\u0000\u0000H\u0000\u0000\u0000\u0001\u0000\u0000\u0000H\u0000\u0000\u0000\u0001����\u0000\u0010JFIF\u0000\u0001\u0002\u0000\u0000H\u0000H\u0000\u0000��\u0000\fAdobe_CM\u0000\u0001��\u0000\u000eAdobe\u0000d�\u0000\u0000\u0000\u0001��\u0000�\u0000\f\b\b\b\t\b\f\t\t\f\u0011\u000b\n\u000b\u0011\u0015\u000f\f\f\u000f\u0015\u0018\u0013\u0013\u0015\u0013\u0013\u0018\u0011\f\f\f\f\f\f\u0011\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\u0001\r\u000b\u000b\r\u000e\r\u0010\u000e\u000e\u0010\u0014\u000e\u000e\u000e\u0014\u0014\u000e\u000e\u000e\u000e\u0014\u0011\f\f\f\f\f\u0011\u0011\f\f\f\f\f\f\u0011\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f��\u0000\u0011\b\u0000j\u0000�\u0003\u0001"\u0000\u0002\u0011\u0001\u0003\u0011\u0001��\u0000\u0004\u0000\n��\u0001?\u0000\u0000\u0001\u0005\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0001\u0002\u0004\u0005\u0006\u0007\b\t\n\u000b\u0001\u0000\u0001\u0005\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\u0010\u0000\u0001\u0004\u0001\u0003\u0002\u0004\u0002\u0005\u0007\u0006\b\u0005\u0003\f3\u0001\u0000\u0002\u0011\u0003\u0004!\u00121\u0005AQa\u0013"q�2\u0006\u0014���B#$\u0015R�b34r��C\u0007%�S���cs5\u0016���&D�TdE£t6\u0017�U�e���u��F\'���������������Vfv��������7GWgw��������\u0011\u0000\u0002\u0002\u0001\u0002\u0004\u0004\u0003\u0004\u0005\u0006\u0007\u0007\u0006\u00055\u0001\u0000\u0002\u0011\u0003!1\u0012\u0004AQaq"\u0013\u00052��\u0014��B#�R��3$b�r��CS\u0015cs4�%\u0006\u0016���\u0007&5��D�T�\u0017dEU6te����u��F���������������Vfv��������\'7GWgw�������\u0000\f\u0003\u0001\u0000\u0002\u0011\u0003\u0011\u0000?\u0000�l�\f\u0014��χ)�|���^TH��n�à�6�\u001b;�;!5�{Y\u0013��\u0000^ɲ\u0000�ˎr\u001b\u001fő���}\u0013�(�ȴ�\u0013\u001f5\u0000���\u0000\u000fwwD\u000f\u000e���(�\u0005|��L��O�lSm���ƞ\'RQ@\u000ei�N�\n��M�8sƥЫ�?F�&@�O�a�\u001b\r{�(`��s���/��(��e0�ܲ\u000b;\u0004�~�`�\u0005*遪0k\u0000�Bd�\u0001D��rtSkZ<� ��\u0014�AM+���vLn\u0
+  01d�[Q�\u0014��Od�\u000b�j�G�=ootV�=ǰO�+[�\b\u0019E I�\u001fY�Kk\u001d�\u001bj��ȭe�Hi>\u001a&\u001f5��Ь\u001axO鮶΃Ѳ��T�P�O��i������Y��\u0004���,9,\'Z�\u0000x\u001f�я[P�q́�I���\\)�?4\u00014\'\u0011�\'������O�8\u001f\u0005
+  b\u000bL8Gb\b��l\u001ajKG橌�ka�8��T�\u0015OxEk\u0000hh(�5�\u000f4�q�(�OMt�gÈ\u0002k_\u0015�2`7��\u0000g<�E&\u001d\u0003Z#��ьۏ�ğ-\u0015iκ�n�\u0017�[Y�����L=��xVm�v�\u0017Tw�~i�_(�HB�h\u001d-�@"\u0014|q>,�2\u001e\u000b��\u001d�Dgޥ^3;������%G)\u0005�\u0014-\u0007��\u000b��cVF�Q���\u0001���� �i�q��W[���\u001fzgc��C�L3\u000b�KX\u0017�\t\t��{xq��}�ږ�w�<��}� \u001f\u0014,\'V\u00031���>:#��f�a\u0005���\u001fQ�\u0013����\u0004\u0003�G�������n�f�����\u001cߓ����v�����k\'�\u0001�o�u\u001e��w����\u00151�>�Ӥ��\n̚_��|�O\f�\u0007P%�\u0018g�2\u0014\t��O���S�:C
+  � �Gn�H�ӝ�J�qX$Hlht3�r���Ew��?"�\t?�5�s���{)�?k��6���\u0003)�\u0011}]:��״�ΰYm�#��QF�Bƻ��z�y�ބ�\u0006�y\u0019U\u0011\u0019v;�I�\u001c\u001f`��{�@k\u001b�$�n��Z\f�v�jvu� ��9�R\t6�;�\r,���\u0000�U��u4gc��|{l�o��jh%�ps�}\u0005��\u001e��^�_k�Cw���\u00006�o�V��lަ�aRr\u001b���`�����F�\u0016��{��\u0019g�1����2s\u00125ç\u0017�M�r�7�=\u0
+  006�s��3�&�z�s\u001e�-����N��\u001b龜��[��h�}oS��Z�-Lgeن��\n\u001fm\u000f��\u0001a\u0007�uu��Uo�\u001d�\\�w[�\u0019�\u0017?\u001f\u001c�\u001e�Y��<�}\'��m�w��B����5��Z�W��b��\\֛���:Iswۏ�����}����\u0000\u0002�2<6u�ÿذDqPӧ
+  \u0010��wP�\u0006��5��Y괶u�����?=;��2����ź�\u0003\u0011��r\u001fT\u0018�/�$fz`1�an����@�/�.�6�_e��5����\u000
+  0H�\u001a.u��̋.���Yu�}��=�\u0007{�ߟ�ߦ�\u0000�Q�Ǭ@?g���/�$}�j��a�\b�\u0015v��t\u0007�^�\u000bO��N�s_\u001a�}+\u
+  001a�}&�Ӑ�G����.n�2�v�폤Ƹ�$�\u001b\u001a-���_KdC�|L�$�\\\u001c\u001a\\\f�Y�hp��2�u�5�mm!�-f�����\u0000���� d�;�\u001b�Y��ch\u0003��������\u001d��**�\f��^��k�R<�C&\u0006�1�x�8YعW��/�k.���|�6�\u0007\u0000�Z��l��,��&u,W��1��\u001b,��\u000e\u001c*w�e�����Z�\u0000�&\u0010�\u0016�v����\u000b�\\4�\u0007�4��챯��\u001b\u001ae���joZ��\u000e\u001aj�\u0007��wf�Y0��N�\u0015{���-\u001d��N��\u001f�p���r۷V����\u0011+�\u0016HƵ/���\tR��\r�+\u0012��K����
+  �gU1�\u001eHݴ�\u0013�KT���bA��Dc��A��˟=N\f��9�";�\u0018}r�I��k����\u0002�\u000f\u0012E;O�l\u0016}/\u0016��ǕE�;�;ԬcV�Z�m����a���I��ۯ󕠻��]\u0001��\u0004\u0010D��+Ȯv��D�:�\t\t\u0010��\u0019�\u000f\u0006�-\u0005�Ηj H �~��\\
+  T陘�����ǲ]ya���ͩ�;��F~e?�&���u�\u001e�\u0000�.�s]e��d��6�W8\u000e?��ǒGsls�샤t�X\\//4:�k+yi�\u0000��c}���>�?��\
+  u0000�]\u0017G�n\u0006\u001b)m��\t$}\u0003?�;�\u0013^Vn\u0018w���5��\u0004��:�\u0000[�+w\u001f�����\u001ff÷dj\u000f�5)x$\u001e�Inm-�eU���\u0001�ym��\r���v�k��N\u000b��\u0018\u001e�{��ԏL�]�k����\u0000��^o�z�}�1ϐ�G��v��?�
+  +\u001d;�e�+\u0006��X���\u001f���;��à�������p�cݶ�o\u0000�����?����؅�F-���#)��l�F��]��W7���\u0005��\u0019��;�#
+  �\u0007uZ\u0018���*�\u00003�[u�lj\t-���(��*�0�\u0007�ѐ��F.+_h/{\\]e�\u0003���i����O�\u0000�������:h��8̨�889�-q
+  \u000e��Us�m�g�W�Vm�����e����*�?X:E�-\rme�\u0013�A\u0003���v��RLO���{j�}ؔ2����6ʞ��s��]vz��\u0015_���E���h���Cp
+  y`:\r�w��\u0000�����G#\u001a�����p;�Ɲΐw\u000fB�;��_�7�\u0000�!�/�g+\u001b��;}�\u0016�\u0006��\u000e\u0015�ާ���
+  ���ϡ��D�b�c\u001am�`�����X��h����?�U��%�Xc�S���w�n1ck����KI��ݛ,s�M�>�Uuo�1���ȱ�\u001fѸ�;�6{���\u0000I��SD���ɆQ\u001f�����ᛓk_��<�����Hp����k�\u001fN��ت\u0017\u0001��xxBm�\u001c���\u001b!���\u0019\u001b���y��\u00001�+8��
+  �����\b�\rZ���s۝:\b�\u0005j�S��)ŕ\u0018�$4��*\u0001tI/Aa��\u001aƒ�X\u0003���\u0004��s�>���&k��v��F�\u001egh?A�
+  W$��ǁk\\��\u0000��\u0001��\u001b��N\u000e�,�3X�:\u000e�&\u0011⻊���v�[�\u0016\u001d��\u0010\u001d\u0004���h�ɵϷ%ރ���\u001a\u0013������������\u0004D����uzͭ�\u0007�I\r�����Ԫ#b�"wnu\u000fU�YO��\u0001\u000en��x��32j�i�\u0011 
+  �$L�����\u0005�\u0011\u0011 ��o�ڟ��;��A2�M�$F�k���x�[�Fy�7\u0017\u0012km`��\u0011��rP��Xpk����w\u0001�h��?r��a\u001e�s\u000e�]�O�ן���\u001b����Z��\u0000\u0000c���?�}$�\b�j\r�2qq������th2\\\u0006�}/��\u0017�5\u001a}+��{��@�$C����(�dU�Q�ŭ���\u0002��3`\u000f\'B4\u001c\u0004�\u0013Z�i�\u0017�\u0014�����D�#NG\u0006?��Z��C6��EN:\u001
+  0<8���b�_[y�\u001e4ӏ\u0014��F���\u0000rq�Z\u000fgV��h;!�\u000e��\u000fqa��w�\n�;�}G\u001f}A�]�G�f�N��ͭ�D1��-
+  g��qY-m�@iq\u0012A�~\u001f�P�^\f��e��9Σ`\u0002wVg۠�������\u0000�+�7\u0016��eN���6\u0003\\\u00013>�C�uV7�����\u
+  000f�&\u001eM�v�ۃ� ?P�\u001fI��\u0000�O]�\f?� ��8�\u0004�)c�[�F7��ˣ���L\u0003���d5� ~��\u0017��\u0012y.:I]�;
+  |\u00124�a���%X\u001d���\u001e:�,M�a��L�k�w6$w�J_i6X��:��\'�E�t����#���\u0000���|0;_\u0003���\u000fn�t��F���ִ9
+  ��`��>O�!U-,%�����w�B�Ha�\u0017��\u0004\u001f?\u0005`��9����[�\b����3ژMh\u0017\rRR�RX\u001c�Z��\u0004�.\u0007
+  �����!e6W����\u001d���l�Ѫ��l��v�9\u001cv\u001bx\u001f�S�2�N�D��I\r���I�:]�\u0007�6k��W��\r1 \r`~iԡ\u00170��Q\'�\u001aH\u001c���*Ms7�4W\u0004�v�$������\u00032��,�ސ�烺~��j\u0011\u0016h���F�tl�c}ζ���k|�W{~>�f�q�h�\u0016��A��\u0004�\u0000"ߢ����\u000bL\u0000\u001d1��&%J��ps\\ZC�sL\u0011��JX�[>\n�뢲�fE��\u001e����\u001079�U���\u0007�+ٷ�͠�\u0016T���G�����U�\r|�%�\u001f8�߼��#�,,���@"u��x�Y���\r��v\u001e(-$8\u001eU�^�\u0000id��4���{�\u0019���Fd
+  \n%dF�[u���%�Z\u0000�\u0007�;o�Qʰ3 \u0018�]�\u000f\u0003O�@\u0016~�}�n�"P ��\u001e�\u001a\u000e�\u001d��\'*��q�\u000e���O��N���.Z\u000f?�\t����Ɔ��\u000bI2c�\u0004;�Ц�\u0012��B�\u0000\u0001A��6�\u0000���\u001a�A��k�S�\u0011��\u0007�\u001a�۱T��Apc���m0u�����sV�N��g?O���\u0003��\u0000!;�\u0000;��9�\\�J\u001c|GO=V\u001a�˻�%�\rI<\u0000�Qc\u001c�6t��wQ��g�ָ��\u001f�)7菟����)�t�5i\u001bS�kko�\u0019�H�}�S�Z\rv^;ͻ�\u0006\b���G�\u001f���\u001fE=
+  �\u0000K�w\u001c}7}\u0005\u0011�\u001b~��S\u0007\u0010��p�L�\t�\u0010�x6\u00007\u0016��\u001b��s������\r��\u0010��՜}\u0013�Z�6(;���f4��7 \u0000e���>n�^�\u000bm��w5Ո\'G�\u0000?���\u001f�\u0019���\u0001\u0013�/��>\u0007���p�\u001dE�����|i%�f�\u0018�Y;K�I;�u�J��[�s[�ēa\u000e$:{��w��"���!�G���\u001d���\u0000_�@�\u0000\u0004?���\u001e8��\u0000_�\u0011\u001d7���V�\u001c�}�p\u000e3-q�1����\u0000��w�kݶ�����,�\u00009�\u000f�߀�����-�U�g<��\u000
+  0��\u0000s�\t�c}O�}�n\u0010L@k���?��j�\\\u0001\r�\'�c���Z�\u0000�??��\u0000~U��p����熣�>���G]\u0013[c�}��D�qП��-U��\u0000\u001f\u0015c?��\u001c\u000f��\u0000=UNǲ�n�)\u0002������2\nPhotoshop 3.0\u00008BIM\u0004\u0004\u0
+  000\u0000\u0000\u0000\u00007\u001c\u0001Z\u0000\u0003\u001b%G\u001c\u0002\u0000\u0000\u0002\u0000\u0002\u001c\u0002(\u0000\u0016Mr8OepFOQWCrvaqleAWgqg\u001c\u00027\u0000\b20150506\u00008BIM\u0004%\u0000\u0000\u0000\u0000\u0000\u0010\u0012�\u0000(G����c��R�I�8BIM\u0003�\u0000\u0000\u0000\u0000\u0019�<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">\n<plist version="1.0">\n<dict>\n\t<key>com.apple.print.PageFormat.PMHorizontalRes</key>\n\t<dict>\n\t\t<key>com.apple.print.ticket.creator</key>\n\t\t<string>com.apple.jobticket</string>\n\t\t<key>com.apple.print.ticket.itemArray</key>\n\t\t<array>\n\t\t\t<dict>\n\t\t\t\t<key>com.apple.print.PageFormat.PMHorizontalRes</key>\n\t\t\t\t<real>72</real>\n\t\t\t\t<key>com.apple.print.ticket.stateFlag</key>\n\t\t\t\t<integer>0</integer>\n\t\t\t</dict>\n\t\t</array>\n\t</dict>\n\t<key>com.apple.print.PageFormat.PMOrientation</key>\n\t<dict>\n\t\t<key>com.apple.print.ticket.creator</key>\n\t\t<string>com.apple.jobticket</string>\n\t\t<key>com.apple.print.ticket.itemArray</key>\n\t\t<array>\n\t\t\t<dict>\n\t\t\t\t<key>com.apple.print.PageFormat.PMOrientation</key>\n\t\t\t\t<integer>1</integer>\n\t\t\t\t<key>com.apple.print.ticket.stateFlag</key>\n\t\t\t\t<integer>0</integer>\n\t\t\t</dict>\n\t\t</array>\n\t</dict>\n\t<key>com.apple.print.PageFormat.PMScaling</key>\n\t<dict>\n\t\t<key>com.apple.print.ticket.creator</key>\n\t\t<string>com.apple.jobticket</string>\n\t\t<key>com.apple.print.ticket.itemArray</key>\n\t\t<array>\n\t\t\t<dict>\n\t\t\t\t<key>com.apple.print.PageFormat.PMScaling</key>\n\t\t\t\t<real>1</real>\n\t\t\t\t<key>com.apple.print.ticket.stateFlag</key>\n\t\t\t\t<integer>0</integer>\n\t\t\t</dict>\n\t\t</array>\n\t</dict>\n\t<key>com.apple.print.PageFormat.PMVerticalRes</key>\n\t<dict>\n\t\t<key>com.apple.print.ticket.creator</key>\n\t\t<string>com.apple.jobticket</string>\n\t\t<key>com.apple.print.ticket.itemArray</key>\n\t\t<array>\n\t\t\t<dict>\n\t\t\t\t<key>com.apple.print.PageFormat.PMVerticalRes</key>\n\t\t\t\t<real>72</real>\n\t\t\t\t<key>com.apple.print.ticket.stateFlag</key>\n\t\t\t\t<integer>0</integer>\n\t\t\t</dict>\n\t\t</array>\n\t</dict>\n\t<key>com.apple.print.PageFormat.PMVerticalScaling</key>\n\t<dict>\n\t\t<key>com.apple.print.ticket.creator</key>\n\t\t<string>com.apple.jobticket</string>\n\t\t<key>com.apple.print.ticket.itemArray</key>\n\t\t<array>\n\t\t\t<dict>\n\t\t\t\t<key>com.apple.print.PageFormat.PMVerticalScaling</key>\n\t\t\t\t<real>1</real>\n\t\t\t\t<key>com.apple.print.ticket.stateFlag</key>\n\t\t\t\t<integer>0</integer>\n\t\t\t</dict>\n\t\t</array>\n\t</dict>\n\t<key>com.apple.print.subTicket.paper_info_ticket</key>\n\t<dict>\n\t\t<key>PMPPDPaperCodeName</key>\n\t\t<dict>\n\t\t\t<key>com.apple.print.ticket.creator</key>\n\t\t\t<string>com.apple.jobticket</string>\n\t\t\t<key>com.apple.print.ticket.itemArray</key>\n\t\t\t<array>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>PMPPDPaperCodeName</key>\n\t\t\t\t\t<string>A4</string>\n\t\t\t\t\t<key>com.apple.print.ticket.stateFlag</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t</dict>\n\t\t\t</array>\n\t\t</dict>\n\t\t<key>PMPPDTranslationStringPaperName</key>\n\t\t<dict>\n\t\t\t<key>com.apple.print.ticket.creator</key>\n\t\t\t<string>com.apple.jobticket</string>\n\t\t\t<key>com.apple.print.ticket.itemArray</key>\n\t\t\t<array>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>PMPPDTranslationStringPaperName</key>\n\t\t\t\t\t<string>A4</string>\n\t\t\t\t\t<key>com.apple.print.ticket.stateFlag</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t</dict>\n\t\t\t</array>\n\t\t</dict>\n\t\t<key>PMTiogaPaperName</key>\n\t\t<dict>\n\t\t\t<key>com.apple.print.ticket.creator</key>\n\t\t\t<string>com.apple.jobticket</string>\n\t\t\t<key>com.apple.print.ticket.itemArray</key>\n\t\t\t<array>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>PMTiogaPaperName</key>\n\t\t\t\t\t<string>iso-a4</string>\n\t\t\t\t\t<key>com.apple.print.ticket.stateFlag</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t</dict>\n\t\t\t</array>\n\t\t</dict>\n\t\t<key>com.apple.print.PageFormat.PMAdjustedPageRect</key>\n\t\t<dict>\n\t\t\t<key>com.apple.print.ticket.creator</key>\n\t\t\t<string>com.apple.jobticket</string>\n\t\t\t<key>com.apple.print.ticket.itemArray</key>\n\t\t\t<array>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>com.apple.print.PageFormat.PMAdjustedPageRect</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t\t<real>783</real>\n\t\t\t\t\t\t<real>559</real>\n\t\t\t\t\t</array>\n\t\t\t\t\t<key>com.apple.print.ticket.stateFlag</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t</dict>\n\t\t\t</array>\n\t\t</dict>\n\t\t<key>com.apple.print.PageFormat.PMAdjustedPaperRect</key>\n\t\t<dict>\n\t\t\t<key>com.apple.print.ticket.creator</key>\n\t\t\t<string>com.apple.jobticket</string>\n\t\t\t<key>com.apple.print.ticket.itemArray</key>\n\t\t\t<array>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>com.apple.print.PageFormat.PMAdjustedPaperRect</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<real>-18</real>\n\t\t\t\t\t\t<real>-18</real>\n\t\t\t\t\t\t<real>824</real>\n\t\t\t\t\t\t<real>577</real>\n\t\t\t\t\t</array>\n\t\t\t\t\t<key>com.apple.print.ticket.stateFlag</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t</dict>\n\t\t\t</array>\n\t\t</dict>\n\t\t<key>com.apple.print.PaperInfo.PMPaperName</key>\n\t\t<dict>\n\t\t\t<key>com.apple.print.ticket.creator</key>\n\t\t\t<string>com.apple.jobticket</string>\n\t\t\t<key>com.apple.print.ticket.itemArray</key>\n\t\t\t<array>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>com.apple.print.PaperInfo.PMPaperName</key>\n\t\t\t\t\t<string>iso-a4</string>\n\t\t\t\t\t<key>com.apple.print.ticket.stateFlag</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t</dict>\n\t\t\t</array>\n\t\t</dict>\n\t\t<key>com.apple.print.PaperInfo.PMUnadjustedPageRect</key>\n\t\t<dict>\n\t\t\t<key>com.apple.print.ticket.creator</key>\n\t\t\t<string>com.apple.jobticket</string>\n\t\t\t<key>com.apple.print.ticket.itemArray</key>\n\t\t\t<array>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>com.apple.print.PaperInfo.PMUnadjustedPageRect</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t\t<integer>0</integer>\n\t\t\t\t\t\t<real>783</real>\n\t\t\t\t\t\t<real>559</real>\n\t\t\t\t\t</array>\n\t\t\t\t\t<key>com.apple.print.ticket.stateFlag</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t</dict>\n\t\t\t</array>\n\t\t</dict>\n\t\t<key>com.apple.print.PaperInfo.PMUnadjustedPaperRect</key>\n\t\t<dict>\n\t\t\t<key>com.apple.print.ticket.creator</key>\n\t\t\t<string>com.apple.jobticket</string>\n\t\t\t<key>com.apple.print.ticket.itemArray</key>\n\t\t\t<array>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>com.apple.print.PaperInfo.PMUnadjustedPaperRect</key>\n\t\t\t\t\t<array>\n\t\t\t\t\t\t<real>-18</real>\n\t\t\t\t\t\t<real>-18</real>\n\t\t\t\t\t\t<real>824</real>\n\t\t\t\t\t\t<real>577</real>\n\t\t\t\t\t</array>\n\t\t\t\t\t<key>com.apple.print.ticket.stateFlag</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t</dict>\n\t\t\t</array>\n\t\t</dict>\n\t\t<key>com.apple.print.PaperInfo.ppd.PMPaperName</key>\n\t\t<dict>\n\t\t\t<key>com.apple.print.ticket.creator</key>\n\t\t\t<string>com.apple.jobticket</string>\n\t\t\t<key>com.apple.print.ticket.itemArray</key>\n\t\t\t<array>\n\t\t\t\t<dict>\n\t\t\t\t\t<key>com.apple.print.PaperInfo.ppd.PMPaperName</key>\n\t\t\t\t\t<string>A4</string>\n\t\t\t\t\t<key>com.apple.print.ticket.stateFlag</key>\n\t\t\t\t\t<integer>0</integer>\n\t\t\t\t</dict>\n\t\t\t</array>\n\t\t</dict>\n\t\t<key>com.apple.print.ticket.APIVersion</key>\n\t\t<string>00.20</string>\n\t\t<key>com.apple.print.ticket.type</key>\n\t\t<string>com.apple.print.PaperInfoTicket</string>\n\t</dict>\n\t<key>com.apple.print.ticket.APIVersion</key>\n\t<string>00.20</string>\n\t<key>com.apple.print.ticket.type</key>\n\t<string>com.apple.print.PageFormatTicket</string>\n</dict>\n</plist>\n\u00008BIM\u0003�\u0000\u0000\u0000\u0000\u0000\u0010\u0000H\u0000\u0000\u0000\u0001\u0000\u0002\u0000H\u0000\u0000\u0000\u0001\u0000\u00028BIM\u0004&\u0000\u0000\u0000\u0000\u0000\u000e\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000?�\u0000\u00008BIM\u0004\r\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u001e8BIM\u0004\u0019\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u001e8BIM\u0003�\u0000\u0000\u0000\u0000\u0000\t\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u00008BIM\u0004\n\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u00008BIM\'\u0010\u0000\u0000\u0000\u0000\u0000\n\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00028BIM\u0003�\u0000\u0000\u0000\u0000\u0000H\u0000/ff\u0000\u0001\u0000lff\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0001\u0000/ff\u0000\u0001\u0000���\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0001\u00002\u0000\u0000\u0000\u0001\u0000Z\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0001\u00005\u0000\u0000\u0000\u0001\u0000-\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u00018BIM\u0003�\u0000\u0000\u0000\u0000\u0000p\u0000\u0000����������������������\u0003�\u0000\u0000\u0000\u0000����������������������\u0003�\u0000\u0000\u0000\u0000����������������������\u0003�\u0000\u0000\u0000\u0000����������������������\u0003�\u0000\u00008BIM\u0004\b\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0001\u0000\u0000\u0002@\u0000\u0000\u0002@\u0000\u0000\u0000\u00008BIM\u0004\u001e\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u00008BIM\u0004\u001a\u0000\u0000\u0000\u0000\u0003E\u0000\u0000\u0000\u0006\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000b \u0000\u0000\u0010�\u0000\u0000\u0000\b\u0000I\u0000M\u0000G\u0000P\u00005\u00009\u00006\u00000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010�\u0000\u0000\u000b \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000null\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0006boundsObjc\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000Rct1\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0000Top long\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Leftlong\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Btomlong\u0000\u0000\u000b \u0000\u0000\u0000\u0000Rghtlong\u0000\u0000\u0010�\u0000\u0000\u0000\u0006slicesVlLs\u0000\u0000\u0000\u0001Objc\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0005slice\u0000\u0000\u0000\u0012\u0000\u0000\u0000\u0007sliceIDlong\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0007groupIDlong\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0006originenum\u0000\u0000\u0000\fESliceOrigin\u0000\u0000\u0000\rautoGenerated\u0000\u0000\u0000\u0000Typeenum\u0000\u0000\u0000\nESliceType\u0000\u0000\u0000\u0000Img \u0000\u0000\u0000\u0006boundsObjc\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000Rct1\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0000Top long\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Leftlong\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Btomlong\u0000\u0000\u000b \u0000\u0000\u0000\u0000Rghtlong\u0000\u0000\u0010�\u0000\u0000\u0000\u0003urlTEXT\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000nullTEXT\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000MsgeTEXT\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0006altTagTEXT\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u000ecellTextIsHTMLbool\u0001\u0000\u0000\u0000\bcellTextTEXT\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\thorzAlignenum\u0000\u0000\u0000\u000fESliceHorzAlign\u0000\u0000\u0000\u0007default\u0000\u0000\u0000\tvertAlignenum\u0000\u0000\u0000\u000fESliceVertAlign\u0000\u0000\u0000\u0007default\u0000\u0000\u0000\u000bbgColorTypeenum\u0000\u0000\u0000\u0011ESliceBGColorType\u0000\u0000\u0000\u0000None\u0000\u0000\u0000\ttopOutsetlong\u0000\u0000\u0000\u0000\u0000\u0000\u0000\nleftOutsetlong\u0000\u0000\u0000\u0000\u0000\u0000\u0000\fbottomOutsetlong\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u000brightOutsetlong\u0000\u0000\u0000\u0000\u00008BIM\u0004(\u0000\u0000\u0000\u0000\u0000\f\u0000\u0000\u0000\u0001?�\u0000\u0000\u0000\u0000\u0000\u00008BIM\u0004\u0014\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u00018BIM\u0004\f\u0000\u0000\u0000\u0000\u0012p\u0000\u0000\u0000\u0001\u0000\u0000\u0000�\u0000\u0000\u0000j\u0000\u0000\u0001�\u0000\u0000��\u0000\u0000\u0012T\u0000\u0018\u0000\u0001����\u0000\u0010JFIF\u0000\u0001\u0002\u0000\u0000H\u0000H\u0000\u0000��\u0000\fAdobe_CM\u0000\u0001��\u0000\u000eAdobe\u0000d�\u0000\u0000\u0000\u0001��\u0000�\u0000\f\b\b\b\t\b\f\t\t\f\u0011\u000b\n\u000b\u0011\u0015\u000f\f\f\u000f\u0015\u0018\u0013\u0013\u0015\u0013\u0013\u0018\u0011\f\f\f\f\f\f\u0011\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\u0001\r\u000b\u000b\r\u000e\r\u0010\u000e\u000e\u0010\u0014\u000e\u000e\u000e\u0014\u0014\u000e\u000e\u000e\u000e\u0014\u0011\f\f\f\f\f\u0011\u0011\f\f\f\f\f\f\u0011\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f��\u0000\u0011\b\u0000j\u0000�\u0003\u0001"\u0000\u0002\u0011\u0001\u0003\u0011\u0001��\u0000\u0004\u0000\n��\u0001?\u0000\u0000\u0001\u0005\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0001\u0002\u0004\u0005\u0006\u0007\b\t\n\u000b\u0001\u0000\u0001\u0005\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0002\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\u0010\u0000\u0001\u0004\u0001\u0003\u0002\u0004\u0002\u0005\u0007\u0006\b\u0005\u0003\f3\u0001\u0000\u0002\u0011\u0003\u0004!\u00121\u0005AQa\u0013"q�2\u0006\u0014���B#$\u0015R�b34r��C\u0007%�S���cs5\u0016���&D�TdE£t6\u0017�U�e���u��F\'���������������Vfv��������7GWgw��������\u0011\u0000\u0002\u0002\u0001\u0002\u0004\u0004\u0003\u0004\u0005\u0006\u0007\u0007\u0006\u00055\u0001\u0000\u0002\u0011\u0003!1\u0012\u0004AQaq"\u0013\u00052��\u0014��B#�R��3$b�r��CS\u0015cs4�%\u0006\u0016���\u0007&5��D�T�\u0017dEU6te����u��F���������������Vfv��������\'7GWgw�������\u0000\f\u0003\u0001\u0000\u0002\u0011\u0003\u0011\u0000?\u0000�l�\f\u0014��χ)�|���^TH��n�à�6�\u001b;�;!5�{Y\u0013��\u0000^ɲ\u0000�ˎr\u001b\u001fő���}\u0013�(�ȴ�\u0013\u001f5\u0000���\u0000\u000fwwD\u000f\u000e���(�\u0005|��L��O�lSm���ƞ\'RQ@\u000ei�N�\n��M�8sƥЫ�?F�&@�O�a�\u001b\r{�(`��s���/��(��e0�ܲ\u000b;\u0004�~�`�\u0005*遪0k\u0000�Bd�\u0001D��rtSkZ<� ��\u00
+  14�AM+���vLn\u001d�[Q�\u0014��Od�\u000b�j�G�=ootV�=ǰO�+[�\b\u0019E I�\u001fY�Kk\u001d�\u001bj��ȭe�Hi>\u001a&\u001f5��Ь\u001axO鮶΃Ѳ��T�P�O��i������Y��\u0004���,9,\'Z�\u0000x\u001f�я[P�q́�I���\\)�?4\u00014\'\u0011�\'������
+  O�8\u001f\u0005b\u000bL8Gb\b��l\u001ajKG橌�ka�8��T�\u0015OxEk\u0000hh(�5�\u000f4�q�(�OMt�gÈ\u0002k_\u0015�2`7��\u0000g<�E&\u001d\u0003Z#��ьۏ�ğ-\u0015iκ�n�\u0017�[Y�����L=��xVm�v�\u0017Tw�~i�_(�HB�h\u001d-�@"\u0014|q>,�2\u001e\u000b��\u001d�Dgޥ^3;������%G)\u0005�\u0014-\u0007��\u000b��cVF�Q���\u0001���� �i�q��W[���\u001fzgc��C�L3\u000b�KX\u0017�\t\t��{xq��}�ږ�w�<��}� \u001f\u0014,\'V\u00031���>:#��f�a\u0005���\u001fQ�\u0013����\u0004\u0003�G�������n�f�����\u001cߓ����v�����k\'�\u0001�o�u\u001e��w����\u00151�>�Ӥ��\n̚_��|�O\f�\u0007P%�\u0018g�2\u0
+  014\t��O���S�:C� �Gn�H�ӝ�J�qX$Hlht3�r���Ew��?"�\t?�5�s���{)�?k��6���\u0003)�\u0011}]:��״�ΰYm�#��QF�Bƻ��z�y�ބ�\u0006�y\u0019U\u0011\u0019v;�I�\u001c\u001f`��{�@k\u001b�$�n��Z\f�v�jvu���9�R\t6�;�\r,���\u0000�U��u4gc��|{l�
+  o��jh%�ps�}\u0005��\u001e��^�_k�Cw���\u00006�o�V��lަ�aRr\u001b���`�����F�\u0016��{��\u0019g�1����2s\u00125ç\u
+  0017�M�r�7�=\u0006�s��3�&�z�s\u001e�-����N��\u001b龜��[��h�}oS��Z�-Lgeن��\n\u001fm\u000f��\u0001a\u0007�uu��Uo�\u001d�\\�w[�\u0019�\u0017?\u001f\u001c�\u001e�Y��<�}\'��m�w��B����5��Z�W��b��\\֛���:Iswۏ�����}����\u0000\u0
+  002�2<6u�ÿذDqPӧ\u0010��wP�\u0006��5��Y괶u�����?=;��2����ź�\u0003\u0011��r\u001fT\u0018�/�$fz`1�an����@�/�.�6�_e��5����\u0000H�\u001a.u��̋.���Yu�}��=�\u0007{�ߟ�ߦ�\u0000�Q�Ǭ@?g���/�$}�j��a�\b�\u0015v��t\u0007�^�\u000bO��
+  N�s_\u001a�}+\u001a�}&�Ӑ�G����.n�2�v�폤Ƹ�$�\u001b\u001a-���_KdC�|L�$�\\\u001c\u001a\\\f�Y�hp��2�u�5�mm!�-f�����\u0000���� d�;�\u001b�Y��ch\u0003��������\u001d��**�\f��^��k�R<�C&\u0006�1�x�8YعW��/�k.���|�6�\u0007\u0000�Z��l��,��&u,W��1��\u001b,��\u000e\u001c*w�e�����Z�\u0000�&\u0010�\u0016�v����\u000b�\\4�\u0007�4��챯��\u001b\u001ae���joZ��\u000e\u001aj�\u0007��wf�Y0��N�\u0015{���-\u001d��N��\u001f�p���r۷V����\u0011+�\u0016HƵ/���\tR��\r
+  �+\u0012��K�����gU1�\u001eHݴ�\u0013�KT���bA��Dc��A��˟=N\f��9�";�\u0018}r�I��k����\u0002�\u000f\u0012E;O�l\u0016}/\u0016��ǕE�;�;ԬcV�Z�m����a���I��ۯ󕠻��]\u0001��\u0004\u0010D��+Ȯv��D�:�\t\t\u0010��\u0019�\u000f\u 0006�-\u0
+  05�ΗjH �~��\\�T陘�����ǲ]ya���ͩ�;��F~e?�&���u�\u001e�\u0000�.�s]e��d��6�W8\u000e?��ǒGsls�샤t�X\\//4:�k+yi�\u00
+  00��c}���>�?��\u0000�]\u0017G�n\u0006\u001b)m��\t$}\u0003?�;�\u0013^Vn\u0018w���5��\u0004��:�\u0000[�+w\u001f�����\u001ff÷dj\u000f�5)x$\u001e�Inm-�eU���\u0001�ym��\r���v�k��N\u000b��\u0018\u001e�{��ԏL�]�k����\u0000��^o�
+  z�}�1ϐ�G��v��?�+\u001d;�e�+\u0006��X���\u001f���;��à�������p�cݶ�o\u0000�����?����؅�F-���#)��l�F��]��W7���\u00
+  05��\u0019��;�#�\u0007uZ\u0018���*�\u00003�[u�lj\t-���(��*�0�\u0007�ѐ��F.+_h/{\\]e�\u0003���i����O�\u0000�������:h��8̨�889�-q\u000e��Us�m�g�W�Vm�����e����*�?X:E�-\rme�\u0013�A\u0003���v��RLO���{j�}ؔ2����6ʞ��s��]vz��\u001
+  5_���E���h���Cpy`:\r�w��\u0000�����G#\u001a�����p;�Ɲΐw\u000fB�;��_�7�\u0000�!�/�g+\u001b��;}�\u0016�\u0006��\u000e\u0015�ާ������ϡ��D�b�c\u001am�`�����X��h����?�U��%�Xc�S���w�n1ck����KI��ݛ,s�M�>�Uuo�1���ȱ�\u001fѸ�;�6{���\
+  u0000I��SD���ɆQ\u001f�����ᛓk_��<�����Hp����k�\u001fN��ت\u0017\u0001��xxBm�\u001c���\u001b!���\u0019\u001b���
+  y��\u00001�+8�������\b�\rZ���s۝:\b�\u0005j�S��)ŕ\u0018�$4��*\u0001tI/Aa��\u001aƒ�X\u0003���\u0004��s�>���&k��v
+  ��F�\u001egh?A�W$��ǁk\\��\u0000��\u0001��\u001b��N\u000e�,�3X�:\u000e�&\u0011⻊���v�[�\u0016\u001d��\u0010\u001d\u0004���h�ɵϷ%ރ���\u001a\u0013������������\u0004D����uzͭ�\u0007�I\r�����Ԫ#b�"wnu\u000fU�YO��\u0001\u000en��x
+  ��32j�i�\u0011 �$L�����\u0005�\u0011\u0011 ��o�ڟ��;��A2�M�$F�k���x�[�Fy�7\u0017\u0012km`��\u0011��rP��Xpk����w\u0001�h��?r��a\u001e�s\u000e�]�O�ן���\u001b����Z��\u0000\u0000c���?�}$�\b�j\r�2qq������th2\\\u0006�}/��\u0017�5\u001a}+��{��@�$C����(�dU�Q�ŭ���\u0002��3`\u000f\'B4\u001c\u0004�\u0013Z�i�\u0017�\u0014�����D�#NG\u0006?��
+  Z��C6��EN:\u0010<8���b�_[y�\u001e4ӏ\u0014��F���\u0000rq�Z\u000fgV��h;!�\u000e��\u000fqa��w�\n�;�}G\u001f}A�]�G�f�N��ͭ�D1��-g��qY-m�@iq\u0012A�~\u001f�P�^\f��e��9Σ`\u0002wVg۠�������\u0000�+�7\u0016��eN���6\u0003\\\u0001
+  3>�C�uV7�����\u000f�&\u001eM�v�ۃ� ?P�\u001fI��\u0000�O]�\f?� ��8�\u0004�)c�[�F7��ˣ���L\u0003���d5� ~��\u0017�
+  �\u0012y.:I]�;|\u00124�a���%X\u001d���\u001e:�,M�a��L�k�w6$w�J_i6X��:��\'�E�t����#���\u0000���|0;_\u0003���\u000fn�t��F���ִ9��`��>O�!U-,%�����w�B�Ha�\u0017��\u0004\u001f?\u0005`��9����[�\b����3ژMh\u0017\rRR�RX\u001c�Z�
+  �\u0004�.\u0007�����!e6W����\u001d���l�Ѫ��l��v�9\u001cv\u001bx\u001f�S�2�N�D��I\r���I�:]�\u0007�6k��W��\r1 \r`~iԡ\u00170��Q\'�\u001aH\u001c���*Ms7�4W\u0004�v�$������\u00032��,�ސ�烺~��j\u0011\u0016h���F�tl�c}ζ���k|�W{~>�f�q�h�\u0016��A��\u0004�\u0000"ߢ����\u000bL\u0000\u001d1��&%J��ps\\ZC�sL\u0011��JX�[>\n�뢲�fE��\u001e����\u001079�U���\u0007�+ٷ�͠�\u0016T���G�����U�\r|�%�\u001f8�߼��#�,,���@"u��x�Y���\r��v\u001e(-$8\u001eU�^�\u0000id��4�
+  ��{�\u0019���Fd\n%dF�[u���%�Z\u0000�\u0007�;o�Qʰ3 \u0018�]�\u000f\u0003O�@\u0016~�}�n�"P ��\u001e�\u001a\u000e�\u001d��\'*��q�\u000e���O��N���.Z\u000f?�\t����Ɔ��\u000bI2c�\u0004;�Ц�\u0012��B�\u0000\u0001A��6�\u0000���\u001a�A��k�S�\u0011��\u0007�\u001a�۱T��Apc���m0u�����sV�N��g?O���\u0003��\u0000!;�\u0000;��9�\\�J\u001c|GO=V\u001a�˻�%�\rI<\u0000�Qc\u001c�6t��wQ��g�ָ��\u001f�)7菟����)�t�5i\u001bS�kko�\u0019�H�}�S�Z\rv^;ͻ�\u0006\b���G�\u
+  001f���\u001fE=�\u0000K�w\u001c}7}\u0005\u0011�\u001b~��S\u0007\u0010��p�L�\t�\u0010�x6\u00007\u0016��\u001b��s������\r��\u0010��՜}\u0013�Z�6(;���f4��7 \u0000e���>n�^�\u000bm��w5Ո\'G�\u0000?���\u001f�\u0019���\u0001\u0013�/��>\u0007���p�\u001dE�����|i%�f�\u0018�Y;K�I;�u�J��[�s[�ēa\u000e$:{��w��"���!�G���\u001d���\u0000_�@�\u0000\u0004?���\u001e8��\u0000_�\u0011\u001d7���V�\u001c�}�p\u000e3-q�1����\u0000��w�kݶ�����,�\u00009�\u000f�߀����
+  �-�U�g<��\u0000��\u0000s�\t�c}O�}�n\u0010L@k���?��j�\\\u0001\r�\'�c���Z�\u0000�??��\u0000~U��p����熣�>���G]\u
+  0013[c�}��D�qП��-U��\u0000\u001f\u0015c?��\u001c\u000f��\u0000=UNǲ�n�)\u0002����8BIM\u0004!\u0000\u0000\u000
+  0\u0000\u0000U\u0000\u0000\u0000\u0001\u0001\u0000\u0000\u0000\u000f\u0000A\u0000d\u0000o\u0000b\u0000e\u0000 
+  \u0000P\u0000h\u0000o\u0000t\u0000o\u0000s\u0000h\u0000o\u0000p\u0000\u0000\u0000\u0013\u0000A\u0000d\u0000o\u0000b\u0000e\u0000 \u0000P\u0000h\u0000o\u0000t\u0000o\u0000s\u0000h\u0000o\u0000p\u0000 \u0000C\u0000S\u00003\u0000\u0000\u0000\u0001\u00008BIM\u0004\u0006\u0000\u0000\u0000\u0000\u0000\u0007\u0000\b\u0001\u0001\u0000\u0001\u0001\u0000��\u0013Whttp://ns.adobe.com/xap/1.0/\u0000<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+   <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.1-c036 46.276720, Mon Feb 19 2007 22:13:43     
+     "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:aux="http://ns.adobe.com/exif/1.0/aux/" xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/" xmlns:xap="http://ns.adobe.com/xap/1.0/" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:exif="http://ns.adobe.com/exif/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xapMM="http://ns.adobe.com/xap/1.0/mm/" aux:LensID="2022" aux:Lens="Tamron AF 17-50mm F2.8 XR Di-II LD (Model A16)" aux:SerialNumber="8247071" photoshop:Instructions="Mr8OepFOQWCrvaqleAWgqg" photoshop:DateCreated="2015-05-06" photoshop:ColorMode="3" photoshop:ICCProfile="Adobe RGB 
+  (1998)" photoshop:History="" xap:CreateDate="2015-05-19T20:07:25+02:00" xap:ModifyDate="2015-05-19T20:07:25+02:00" xap:CreatorTool="Adobe Photoshop CS3 Macintosh" xap:MetadataDate="2015-05-19T20:07:25+02:00" tiff:PhotometricInterpretation="4294934563" tiff:Orientation="1" tiff:Make="PENTAX             " tiff:Model="PENTAX K-x   
+        " tiff:XResolution="720000/10000" tiff:YResolution="720000/10000" tiff:ResolutionUnit="2" tiff:NativeDigest="256,257,258,259,262,274,277,284,530,531,282,283,296,301,318,319,529,532,306,270,271,272,305,315,33432;48632D363AE5698E1A9BC754FD7BCA14" exif:PixelXDimension="4288" exif:PixelYDimension="2848" exif:DateTimeOriginal="2015-05-06T18:28+02:00" exif:DateTimeDigitized="2015-05-06T18:28+02:00" exif:ExposureTime="1/400" exif:FNumber="28/5" exif:ExposureProgram="3" exif:ExposureBiasValue="3/10" exif:MaxApertureValue="3363/1189" exif:MeteringMode="5" exif:FocalLength="50/1" exif:SensingMethod="2" exif:CustomRendered="0" exif:ExposureMode="1" exif:WhiteBalance="0" exif:FocalLengthIn35mmFilm="75" exif:SceneCaptureType="0" exif:Contrast="0" exif:Saturation="0" 
+  exif:Sharpness="1" exif:SubjectDistanceRange="3" exif:ColorSpace="-1" exif:NativeDigest="36864,40960,40961,37121,37122,40962,40963,37510,40964,36867,36868,33434,33437,34850,34852,34855,34856,37377,37378,37379,37380,37381,37382,37383,37384,37385,37386,37396,41483,41484,41486,41487,41488,41492,41493,41495,41728,41729,41730,41985,41986,41987,41988,41989,41990,41991,41992,41993,41994,41995,41996,42016,0,2,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,20,22,23,24,25,26,27,28,30;5E4FBA1F0FDA1E030E3F97745AFFCCF5" dc:format="image/jpeg" xapMM:InstanceID="uuid:F74545AAF4FFE411AC519A59E2DB60D1" xapMM:DocumentID="uuid:F64545AAF4FFE411AC519A59E2DB60D1"> <exif:ISOSpeedRatings> <rdf:Seq> <rdf:li>200</rdf:li> </rdf:Seq> </exif:ISOSpeedRatings> <exif:Flash exif:Fired="False" exif:Return="0" exif:Mode="2" exif:Function="False" exif:RedEyeMode="False"/> <xapMM:DerivedFrom rdf:parseType="Resource"/> </rdf:Description> </rdf:RDF> </x:xmpmeta>
+  

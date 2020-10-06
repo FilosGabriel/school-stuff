@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/sendSMS"
+        android:title="Send as SMS " />
+    <item android:id="@+id/decodeSMS"
+        android:title="Decode a Morse Code from SMS" />
+
+</menu>

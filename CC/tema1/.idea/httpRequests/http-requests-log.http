@@ -1,0 +1,10 @@
+GET https://localhost/meteo
+
+###
+
+GET https://source.unsplash.com/random
+
+<> 2020-02-22T050514.200.txt
+
+###
+

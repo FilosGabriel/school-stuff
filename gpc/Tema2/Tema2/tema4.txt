@@ -1,0 +1,302 @@
+#include <cassert>
+#include <climits>
+#include <cmath>
+#include <iostream>
+#include <stdio.h>
+#include "glut.h"
+
+#define PI 3.14159265358979323846
+#define DIM 1000
+
+unsigned char prevKey;
+
+
+class CartesianGrill
+{
+	CartesianGrill(int noLines, double offset = 0.1, const int mull_x = 0, const int mull_y = 0)
+	{
+		this->distance_l = (2.0f - 2 * offset) / (static_cast<double>(noLines) - 1);
+		this->distance_c = distance_l;
+		this->offset = offset;
+		this->no_lines = noLines - 1;
+		this->no_coll = this->no_lines;
+		this->cx = -1.0 + offset + mull_x * distance_l;
+		this->cy = -1.0 + offset + mull_y * distance_c;
+		this->mull_x = mull_x;
+		this->mull_y = mull_y;
+	}
+
+	CartesianGrill(const int no_lines, const int no_coll, const double offset = 0.1, const int mull_x = 0,
+	               const int mull_y = 0)
+	{
+		this->distance_l = (2.0f - 2 * offset) / (static_cast<double>(no_coll) - 1);
+		this->distance_c = (2.0f - 2 * offset) / (static_cast<double>(no_lines) - 1);
+		this->offset = offset;
+		this->no_lines = no_lines - 1;
+		this->no_coll = no_coll - 1;
+		this->cx = -1.0 + offset + mull_x * distance_l;
+		this->cy = -1.0 + offset + mull_y * distance_c;
+		this->mull_x = mull_x;
+		this->mull_y = mull_y;
+	}
+
+
+	void draw_filled_circle(GLfloat x, GLfloat y, GLfloat radius)
+	{
+		auto amount = 40;
+		GLfloat twice_pi = 2.0f * PI;
+		auto x_cal = [&](const int i) { return x + (radius * cos(static_cast<float>(i) * twice_pi / amount)); };
+		auto y_cal = [&](const int i) { return y + (radius * sin(static_cast<float>(i) * twice_pi / amount)); };
+		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+		glBegin(GL_POLYGON);
+		// glVertex2f(x, y); // center of circle
+		for (auto i = 0; i <= amount; i++)
+		{
+			glVertex2f(x_cal(i), y_cal(i));
+		}
+		glEnd();
+	}
+
+
+	void draw_line_grid(const double x, const double y)
+	{
+		glColor3f(0, 0, 0);
+		glBegin(GL_LINES);
+		glVertex2f(x, y);
+		glVertex2f(x, -y);
+		glEnd();
+	}
+
+	void draw_line_grid_y(const double x, const double y)
+	{
+		glColor3f(0, 0, 0);
+		glBegin(GL_LINES);
+		glVertex2f(y, x);
+		glVertex2f(-y, x);
+		glEnd();
+	}
+
+	void draw_line(const int from_x, const int from_y, const int to_x, const int to_y) const
+	{
+		glLineWidth(2.0);
+		glColor3f(1.0, 0.0, 0.0);
+		glBegin(GL_LINES);
+		glVertex2f(calc_xy_from_pos(from_x, distance_l, cx), calc_xy_from_pos(from_y, distance_c, cy));
+		glVertex2f(calc_xy_from_pos(to_x, distance_l, cx), calc_xy_from_pos(to_y, distance_c, cy));
+		glEnd();
+	}
+
+	double calc_xy_from_pos(const int x, const double l, const double origin) const
+	{
+		return origin + x * l;
+	}
+
+	void write_pixel(const int line, const int coll)
+	{
+		if (line >= 0 && line <= no_lines - mull_y && coll >= 0 && coll <= no_lines - mull_y)
+		{
+			glColor3f(0.3, 0.3, 0.3);
+
+			draw_filled_circle(calc_xy_from_pos(line, distance_l, cx), calc_xy_from_pos(coll, distance_c, cy),
+			                   distance_l < distance_c ? (distance_l / 3) : (distance_c / 3));
+		}
+	}
+
+
+	void draw_multiple_pixels(const int x, const int y, int length)
+	{
+		length = length / 2;
+		for (auto i = -length; i <= length; i++)
+		{
+			write_pixel(x, y + i);
+		}
+	}
+
+	void segment_dreapta_3(const int from_x, const int from_y, const int to_x, const int to_y,
+	                       const int length)
+	{
+		const auto m = static_cast<float>(to_y - from_y) / static_cast<float>(to_x - from_x);
+		const auto i = m > 0 ? 1 : -1;
+		const auto dx = to_x - from_x;
+		const auto dy = i * (to_y - from_y);
+
+		auto x = from_x;
+		auto y = from_y;
+
+
+		auto d = 2 * dy - dx;
+		const auto d_e = 2 * dy;
+		const auto d_ne = 2 * (dy - dx);
+
+		draw_multiple_pixels(x, y, length);
+
+		while (x < to_x)
+		{
+			if (d <= 0)
+			{
+				d += d_e;
+				x++;
+			}
+			else
+			{
+				d += d_ne;
+				x++;
+				y += i;
+			}
+			draw_multiple_pixels(x, y, length);
+		}
+	}
+
+	void draw_origin()
+	{
+		glColor3f(0.3, 0.3, 1);
+		draw_filled_circle(calc_xy_from_pos(0, distance_l, cx), calc_xy_from_pos(0, distance_c, cy),
+		                   distance_l < distance_c ? (distance_l / 3) : (distance_c / 3));
+	}
+
+	void draw_x_axis()
+	{
+		glLineWidth(4.0);
+		glColor3f(0.3, 0.3, 1);
+		glBegin(GL_LINES);
+		glLineWidth(4);
+		glVertex2f(cx, cy);
+		glVertex2f(cx, 1 - offset);
+		glEnd();
+	}
+
+	void draw_y_axis()
+	{
+		glLineWidth(4.0);
+		glColor3f(0.3, 0.3, 1);
+		glBegin(GL_LINES);
+		glLineWidth(4);
+		glVertex2f(cx, cy);
+		glVertex2f(1 - offset, cy);
+		glEnd();
+	}
+
+	void draw_grid()
+	{
+		glLineWidth(2);
+		for (auto x = -1.0 + offset; x <= 1.0f - offset; x += distance_l)
+		{
+			draw_line_grid(x, 1.0f - offset);
+		}
+		draw_line_grid(1.0 - offset, 1.0 - offset);
+		draw_line_grid(-1.0 + offset, 1.0 - offset);
+
+
+		for (auto x = -1.0 + offset; x <= 1.0f - offset; x += distance_c)
+		{
+			draw_line_grid_y(x, 1.0f - offset);
+		}
+		draw_line_grid_y(-1.0 + offset, 1.0 - offset);
+		draw_line_grid_y(1.0 - offset, 1.0 - offset);
+	}
+
+	void show()
+	{
+		draw_grid();
+
+		draw_origin();
+		draw_x_axis();
+		draw_y_axis();
+
+
+		auto from_y = no_lines - mull_y;
+		auto to_x = no_coll - mull_x;
+		draw_line(0, from_y, to_x, 11);
+		segment_dreapta_3(0, from_y, to_x, 11, 2);
+
+
+		draw_line(0, 0, to_x, 7);
+		segment_dreapta_3(0, 0, to_x, 7, 0);
+	}
+
+
+public:
+	int no_lines;
+	int no_coll;
+	double distance_l;
+	double distance_c;
+	double start_position;
+	double offset = 0.1;
+
+	double cx;
+	double cy;
+	int mull_x;
+	int mull_y;
+
+	static void render()
+	{
+		glClearColor(1.0, 1.0, 1.0, 1.0);
+		glutPostRedisplay();
+		glClear(GL_COLOR_BUFFER_BIT);
+		auto cartesian_grill = new CartesianGrill(16);
+		cartesian_grill->show();
+	}
+};
+
+void display(void)
+{
+	CartesianGrill::render();
+	glFlush();
+}
+
+void Reshape(int w, int h)
+{
+	glViewport(0, 0, (GLsizei)w, (GLsizei)h);
+}
+
+void KeyboardFunc(unsigned char key, int x, int y)
+{
+	prevKey = key;
+	if (key == 27) // escape
+		exit(0);
+	glutPostRedisplay();
+}
+
+void MouseFunc(int button, int state, int x, int y)
+{
+}
+
+void Init(void)
+{
+	glClearColor(1.0, 1.0, 1.0, 1.0);
+
+
+	glLineWidth(1);
+
+	glPointSize(3);
+
+	glPolygonMode(GL_FRONT, GL_LINE);
+}
+
+
+int main(int argc, char** argv)
+{
+	glutInit(&argc, argv);
+
+	glutInitWindowSize(DIM, DIM);
+
+	glutInitWindowPosition(100, 100);
+
+	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+
+	glutCreateWindow(argv[0]);
+
+	Init();
+
+	glutReshapeFunc(Reshape);
+
+	glutKeyboardFunc(KeyboardFunc);
+
+	glutMouseFunc(MouseFunc);
+
+	glutDisplayFunc(display);
+
+	glutMainLoop();
+
+	return 0;
+}

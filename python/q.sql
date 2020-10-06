@@ -1,0 +1,1 @@
+Select albums.Title,tracks.Name,genres.Name,tracks.Milliseconds from albums join tracks on albums.AlbumId=tracks.AlbumId join genres on genres.GenreId=tracks.GenreId
